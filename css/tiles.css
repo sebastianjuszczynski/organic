@@ -2,27 +2,26 @@
     margin-top: 30px;
     display: flex;
     justify-content: space-around;
-    
 }
+
 .tile {
     flex-basis: 30%;
     position: relative;
     opacity: 0.8;
     transition: .2s;
-    
 }
+
 .tile:hover {
     opacity: 1;
 }
+
 .tile:hover .tile__paragraph-hover {
     transform: scale(1);
 }
 
 img {
     width: 100%;
-   
 }
-
 
 .tile__paragraph {
     position: absolute;
@@ -35,6 +34,7 @@ img {
     padding: 10px 20px;
     text-transform: uppercase;
 }
+
 .tile__paragraph-hover {
     position: absolute;
     top: 60%;
@@ -46,5 +46,4 @@ img {
     text-transform: uppercase;
     transition: .2s;
     transform: scale(0);
-    
 }

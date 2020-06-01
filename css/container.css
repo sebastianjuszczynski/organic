@@ -1,9 +1,11 @@
 .container {
-    width: 1180px;
+    width: 1024px;
     margin: auto;
     max-width: 100%;
     padding: 60px 20px;
+    background-color: white;
 }
+
 .container__paragraph {
     width: 100%;
     text-align: center;
@@ -11,9 +13,11 @@
     text-transform: uppercase;
     margin-bottom: 20px;
 }
+
 .container__h2 {
     width: 100%;
     text-align: center;
     font-size: 40px;
     text-transform: uppercase;
+    margin: 50px auto;
 }

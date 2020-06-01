@@ -1,0 +1,48 @@
+.services {
+    background: url("../img/services.jpg");
+    height: 100vh;
+    position: relative;
+}
+
+.services__text {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    color: white;
+    width: 40%;
+}
+
+.services__text__h3 {
+    font-size: 30px;
+    margin: 40px auto;
+    background-color: #fe9920;
+    text-align: center;
+}
+
+.services__text__paragraph {
+    font-size: 20px;
+    text-align: center;
+    background-color: #fe9920;
+}
+
+.services__container {
+    position: absolute;
+    left: 18%;
+    top: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+.services__container-item {
+    margin: 10px 10px;
+    text-align: center;
+    flex-basis: 25%;
+    background-color: white;
+    padding: 10px;
+}
+
+.fab, .fas {
+    font-size: 80px;
+    color: #fe9920;
+}
