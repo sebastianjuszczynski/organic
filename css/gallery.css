@@ -10,6 +10,12 @@
     margin: 10px;
 }
 
+@media (orientation: portrait) and (max-width: 767px) {
+    .gallery__list-item {
+        flex-basis: 100%;
+    }
+}
+
 .gallery__image {
     height: 30vh;
     object-fit: cover;

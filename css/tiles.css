@@ -11,12 +11,23 @@
     transition: .2s;
 }
 
+@media (orientation: portrait) and (max-width: 767px) {
+    .tile {
+        flex-basis: 100%;
+    }
+    .tiles {
+        flex-wrap: wrap;
+    }
+}
+
 .tile:hover {
     opacity: 1;
 }
 
-.tile:hover .tile__paragraph-hover {
-    transform: scale(1);
+@media (min-width: 1025px) {
+    .tile:hover .tile__paragraph-hover {
+        transform: scale(1);
+    }
 }
 
 img {
@@ -33,6 +44,12 @@ img {
     background: rgba(0, 0, 0, 0.6);
     padding: 10px 20px;
     text-transform: uppercase;
+}
+
+@media (orientation: portrait) and (max-width: 767px) {
+    .tile__paragraph {
+        top: 80%;
+    }
 }
 
 .tile__paragraph-hover {
