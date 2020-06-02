@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="./css/gallery.css">
     <link rel="stylesheet" href="./css/navigation.css">
     <link rel="stylesheet" href="./css/comments.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 
 <body>
@@ -251,13 +253,79 @@
         <div class="comments__container">
             <div class="comments__container-item">
                 <img src="./img/face1.jpg" alt="" class="comments__container-image">
-                <p class="comments__container-paragraph">Green Garden os the best at providing farm management services! Great  help!</p>
+                <p class="comments__container-paragraph">Green Garden os the best at providing farm management services!
+                    Great help!</p>
                 <h4 class="comments__container-h4">Amy White</h4>
                 <h5 class="comments__container-h5">customer</h5>
             </div>
-         
+
         </div>
     </section>
+    <h2 class="container__h2" id="contact">Contact</h2>
+    <form class="contact-form">
+        <div class="container">
+            <div class="contact-form__info">
+                <div class="contact-form__info-item">
+                    <i class="far fa-envelope"></i>
+                    <a href="mailto:contant@greengarden.co.uk"
+                        class="contact-form__info-link">contant@greengarden.co.uk</a>
+                </div>
+                <div class="contact-form__info-item">
+                    <i class="fas fa-mobile-alt far"></i>
+                    <a href="tel:0787936433" class="contact-form__info-link">0787936433</a>
+                </div>
+            </div>
+            <p class="contact-form__header">
+                If You did not find expexted information on our website,<br>
+                please send a contact form or just call us.<br>
+                We will try to answer on all of Your question.
+            </p>
+
+            <div class="contact-form__fields">
+                <input name="name" class="contact-form__field" required placeholder="Full name">
+                <input name="email" type="email" class="contact-form__field" required placeholder="Email Address">
+                <input type="tel" name="" id="" required placeholder="Your phone" class="contact-form__field">
+                <input type="text" name="" id="" required placeholder="Messege topic" class="contact-form__field">
+                <textarea placeholder="Messege" class="contact-form__field contact-form__field--full-width"
+                    name="content" required rows="10"></textarea>
+            </div>
+            <button class="contact-form__submit-button">Send message</button>
+
+        </div>
+    </form>
+    <footer class="footer">
+        <div class="footer__container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.0254254087079!2d-0.6613406847772044!3d52.021934280773245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4877acb2f09f09e3%3A0x4ab5731c67d7cc56!2sGarden%20Centre!5e1!3m2!1spl!2suk!4v1591122331123!5m2!1spl!2suk"
+                width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0" class="footer__map footer__items"></iframe>
+            <div class="footer__motto footer__items">
+                <a href="#" class="navigation__logo-link">
+                    <img src="./img/logo.png" alt="" class="navigation__logo-image">
+                    <p class="navigation__inner__paragraph">Green <span class="navigation__inner__span">Garden</span>
+                    </p>
+                </a>
+                <p class="footer__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim fugit
+                    obcaecati aliquam placeat odit aspernatur nihil. Dolores perspiciatis tenetur quas veritatis
+                    recusandae expedita consectetur eveniet odio soluta, sint quibusdam fuga.</p>
+            </div>
+            <div class="footer__container-item3 footer__items">
+                <h4 class="footer__container-h4">Our Gallery</h4>
+                <a href="img/fruit2.jpg" data-lightbox="www" data-title="Photo number 2" class="gallery__a">
+                    <img src="./img/fruit2.jpg" alt="" class="footer__image"></a>
+                <a href="img/fruit9.jpg" data-lightbox="www" data-title="Photo number 9" class="gallery__a"></a>
+                <img src="./img/fruit9.jpg" alt="" class="footer__image"></a>
+                <a href="img/fruit6.jpg" data-lightbox="www" data-title="Photo number 6" class="gallery__a">
+                    <img src="./img/fruit6.jpg" alt="" class="footer__image"></a>
+                <a href="img/fruit12.jpg" data-lightbox="www" data-title="Photo number 12" class="gallery__a">
+                    <img src="./img/fruit12.jpg" alt="" class="footer__image"></a>
+            </div>
+        </div>
+    </footer>
+    </footer>
+    <p class="footer__author">
+        &copy; Copyright 2020. All rights reserved. Sebastian Juszczyński
+    </p>
     <script src="./src/jquery-3.2.1.min.js"></script>
     <script src="./dist/js/lightbox.js"></script>
     <script>
@@ -265,8 +333,8 @@
             'albumLabel': "Picture %1 of %2"
         })
     </script>
-   <script src="./js/navigation-mobile.js"></script>
-   <script src="./js/comments.js"></script>
+    <script src="./js/navigation-mobile.js"></script>
+    <script src="./js/comments.js"></script>
 </body>
 
 </html>

@@ -3,10 +3,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     width: 1024px;
     margin: auto;
     max-width: 100%;
-
     position: relative;
     height: 80vh;
     z-index: -2;
@@ -22,6 +22,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     z-index: -1;
 }
+
 .comments__h3 {
     font-size: 30px;
     text-align: center;
@@ -29,18 +30,21 @@
     margin: 30px auto;
     text-transform: uppercase;
 }
+
 .comments__container-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
 }
+
 .comments__container-image {
     width: 200px;
     border-radius: 50%;
     margin-bottom: 20px;
     animation: color 4s linear infinite;
 }
+
 .comments__container-paragraph {
     font-size: 20px;
     width: 200px;
@@ -48,10 +52,12 @@
     margin: 20px auto;
     animation: text 4s linear infinite;
 }
+
 .comments__container-h4 {
     font-size: 30px;
     animation: text 4s linear infinite;
 }
+
 .comments__container-h5 {
     font-size: 16px;
     color: #ddd;
@@ -59,57 +65,49 @@
     animation: text 4s linear infinite;
     margin-top: 20px;
 }
+
 @keyframes color {
     0% {
         transform: scale(1);
-     opacity: 0;
+        opacity: 0;
     }
- 
     8% {
-     opacity: 0;
+        opacity: 0;
     }
- 
     13% {
-     opacity: 1;
+        opacity: 1;
     }
- 
     87% {
-     opacity: 1;
+        opacity: 1;
     }
- 
     92% {
-     opacity: 0
+        opacity: 0
     }
- 
     100% {
         transform: scale(1.1);
-     opacity: 0;
+        opacity: 0;
     }
-   }
-   @keyframes text {
+}
+
+@keyframes text {
     0% {
-     transform: scale(1);
-     opacity: 0;
+        transform: scale(1);
+        opacity: 0;
     }
- 
     8% {
-     opacity: 0;
+        opacity: 0;
     }
- 
     13% {
-     opacity: 1;
+        opacity: 1;
     }
- 
     87% {
-     opacity: 1;
+        opacity: 1;
     }
- 
     92% {
-     opacity: 0
+        opacity: 0
     }
- 
     100% {
-     transform: scale(1.1);
-     opacity: 0;
+        transform: scale(1.1);
+        opacity: 0;
     }
-   }
+}
