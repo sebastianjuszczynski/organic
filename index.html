@@ -20,9 +20,82 @@
     <link rel="stylesheet" href="./css/about-us.css">
     <link rel="stylesheet" href="./css/services.css">
     <link rel="stylesheet" href="./css/gallery.css">
+    <link rel="stylesheet" href="./css/navigation.css">
 </head>
 
 <body>
+    <nav class="navigation">
+        <div class="navigation__inner">
+            <div class="navigation__inner__logo">
+                <a href="#" class="navigation__logo-link">
+                    <img src="./img/logo.png" alt="" class="navigation__logo-image">
+                    <p class="navigation__inner__paragraph">Green <span class="navigation__inner__span">Garden</span>
+                    </p>
+                </a>
+            </div>
+            <ul class="navigation__menu">
+                <li class="navigation__menu-item">
+                    <a href="#" class="main-navigation__link">
+                        Home
+                    </a>
+                </li>
+                <li class="navigation__menu-item">
+                    <a href="#tiles" class="main-navigation__link">
+                        Benefits
+                    </a>
+                </li>
+                <li class="navigation__menu-item">
+                    <a href="#about-us" class="main-navigation__link">
+                        about us
+                    </a>
+                </li>
+                <li class="navigation__menu-item">
+                    <a href="#services" class="main-navigation__link">
+                        services
+                    </a>
+                </li>
+                <li class="navigation__menu-item">
+                    <a href="#gallery" class="main-navigation__link">
+                        Gallery
+                    </a>
+                </li>
+                <li class="navigation__menu-item">
+                    <a href="#comments" class="main-navigation__link">
+                        comments
+                    </a>
+                </li>
+                <li class="navigation__menu-item">
+                    <a href="#contact" class="main-navigation__link">
+                        contact
+                    </a>
+                </li>
+                <li class="navigation__menu-item-social">
+                    <a href="https://instagram.com" target="_blank" class="main-navigation__link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="navigation__menu-item-social">
+                    <a href="https://facebook.com" target="_blank" class="main-navigation__link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="navigation__menu-item-social">
+                    <a href="https://twitter.com" target="_blank" class="main-navigation__link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="navigation__mobile-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- <button class="navigation__mobile-button js-navigation__mobile-button">
+                <img src="images/icons/navigation.svg" alt="Otwórz / zamknij nawigację"
+                    class="main-navigation__mobile-button-image">
+            </button> -->
+        </div>
+    </nav>
     <header class="main-banner">
         <p class="main-banner__paragraph">Welcome to Green Garden</p>
         <h1 class="main-banner__h1">fresh. local. organic</h1>
@@ -35,7 +108,7 @@
     <div class="container">
         <p class="container__paragraph">welcome to Green Garden</p>
         <h2 class="container__h2">Our Benefits</h2>
-        <section class="tiles">
+        <section class="tiles" id="tiles">
             <article class="tile">
                 <img src="./img/tile2.jpg" alt="">
                 <p class="tile__paragraph">oraganic food</p>
@@ -57,7 +130,7 @@
         </section>
     </div>
     <div class="container">
-        <h2 class="container__h2">About us</h2>
+        <h2 class="container__h2" id="about-us">About us</h2>
         <section class="about-us">
             <img class="about-us__image" src="./img/AboutUs.jpg" alt="">
             <div class="about-us__text">
@@ -72,7 +145,7 @@
             </div>
         </section>
     </div>
-    <h2 class="container__h2">Services</h2>
+    <h2 class="container__h2" id="services">Services</h2>
     <section class="services">
         <div class="services__text">
             <h3 class="services__text__h3">What we offer</h3>
@@ -106,7 +179,7 @@
             </div>
         </div>
     </section>
-    <h2 class="container__h2">Gallery</h2>
+    <h2 class="container__h2" id="gallery">Gallery</h2>
     <section class="container">
         <ul class="gallery">
             <li class="gallery__list-item">
@@ -177,6 +250,24 @@
         lightbox.option({
             'albumLabel': "Picture %1 of %2"
         })
+    </script>
+     <script>
+        const icon = document.querySelector(".navigation__mobile-button");
+        icon.addEventListener("click", function () {
+            icon.classList.toggle("active");
+        })
+        const menu = document.querySelector(".navigation__menu");
+    
+        icon.addEventListener("click", function () {
+            menu.classList.toggle("active");
+        })
+        menu.addEventListener("click", function () {
+            menu.classList.toggle("active");
+        })
+        menu.addEventListener("click", function () {
+            icon.classList.toggle("active");
+        })
+
     </script>
 </body>
 
