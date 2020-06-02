@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/services.css">
     <link rel="stylesheet" href="./css/gallery.css">
     <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="./css/comments.css">
 </head>
 
 <body>
@@ -244,6 +245,19 @@
             </li>
         </ul>
     </section>
+    <h2 class="container__h2" id="comments">Comments</h2>
+    <section class="comments">
+        <h3 class="comments__h3">What people say</h3>
+        <div class="comments__container">
+            <div class="comments__container-item">
+                <img src="./img/face1.jpg" alt="" class="comments__container-image">
+                <p class="comments__container-paragraph">Green Garden os the best at providing farm management services! Great  help!</p>
+                <h4 class="comments__container-h4">Amy White</h4>
+                <h5 class="comments__container-h5">customer</h5>
+            </div>
+         
+        </div>
+    </section>
     <script src="./src/jquery-3.2.1.min.js"></script>
     <script src="./dist/js/lightbox.js"></script>
     <script>
@@ -251,24 +265,8 @@
             'albumLabel': "Picture %1 of %2"
         })
     </script>
-     <script>
-        const icon = document.querySelector(".navigation__mobile-button");
-        icon.addEventListener("click", function () {
-            icon.classList.toggle("active");
-        })
-        const menu = document.querySelector(".navigation__menu");
-    
-        icon.addEventListener("click", function () {
-            menu.classList.toggle("active");
-        })
-        menu.addEventListener("click", function () {
-            menu.classList.toggle("active");
-        })
-        menu.addEventListener("click", function () {
-            icon.classList.toggle("active");
-        })
-
-    </script>
+   <script src="./js/navigation-mobile.js"></script>
+   <script src="./js/comments.js"></script>
 </body>
 
 </html>
