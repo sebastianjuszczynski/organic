@@ -217,3 +217,13 @@
         margin-left: 20px;
     }
 }
+
+span.item1, span.item2, span.item3, span.item4, span.item5, span.item6, span.item7 {
+    transition: 1s;
+    transform: rotate(0);
+}
+
+span.active {
+    color: green;
+    transform: rotate(360deg);
+}

@@ -5,6 +5,13 @@
     padding: 60px 20px;
     background-color: #fff8ee;
 }
+.container2 {
+    width: 1024px;
+    margin: auto;
+    max-width: 100%;
+    padding: 60px 20px;
+    background-color: #fff8ee;
+}
 
 .container__paragraph {
     width: 100%;
